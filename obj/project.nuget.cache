@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mmlwq4E7F/UgmLXN9k8EiP31jzthNgQRWE2GQtoKewv6ACwCJLTdpO5eDvCdDnC5842CLOsg/B8uMp3xFzQJ0g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gayat\\source\\repos\\DockerWorkForAzureProject\\DockerWorkForAzureProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gayat\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512"
+  ],
+  "logs": []
+}
