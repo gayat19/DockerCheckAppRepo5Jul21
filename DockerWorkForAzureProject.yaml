@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dockerworkforazureproject
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: DockerWorkForAzureProject
+  template:
+    metadata:
+      labels:
+        app: DockerWorkForAzureProject
+    spec:
+      containers:
+      - name: checkdocrepos
+        image: checkreg.azurecr.io/checkdocrepos:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: dsconfigsn1
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dockerworkforazureproject
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: DockerWorkForAzureProject
